@@ -1,0 +1,39 @@
+<?php
+
+/**
+ * @file
+ * Functions to support theming.
+ */
+
+/**
+ * Implements hook_preprocess_image_widget().
+ */
+function kate_preprocess_image_widget(array &$variables) {
+  $data = &$variables['data'];
+
+  // This prevents image widget templates from rendering preview container HTML
+  // to users that do not have permission to access these previews.
+  // @todo revisit in https://drupal.org/node/953034
+  // @todo revisit in https://drupal.org/node/3114318
+  if (isset($data['preview']['#access']) && $data['preview']['#access'] === FALSE) {
+    unset($data['preview']);
+  }
+}
+
+/**
+ * Implements hook_preprocess_breadcrumb().
+ */
+// function kate_preprocess_breadcrumb(&$variables)
+// {
+//   if (($breadcrumb = $variables['breadcrumb']) && !empty($breadcrumb)) {
+//     $request = \Drupal::request();
+//     $route_match = \Drupal::routeMatch();
+//     $page_title = \Drupal::service('title_resolver')->getTitle($request, $route_match->getRouteObject());
+//     if (!empty($page_title)) {
+//       $breadcrumb[] = [
+//         'text' => $page_title,
+//       ];
+//       $variables['breadcrumb'] = $breadcrumb;
+//     }
+//   }
+// }

@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400&display=swap');
+
+
+
+$primary-font: 'Roboto',
+sans-serif;
+
+$secondary-font: 'Montserrat',
+sans-serif;
+
+$h1-font-size: 3rem;
+$h2-font-size: 2.5rem;
+$h3-font-size: 2rem;
+$h4-font-size: 1.5rem;
+$h5-font-size: 1.25rem;
+$h6-font-size: 1rem;
+
+$primary: #fc3d3e;
+$light: #d3e3f1;
+$dark: #121e34;
+$secondary: #6c757d;
+$success: #28a745;
+$info: #17a2b8;
+$warning: #ffc107;
+$danger: #dc3545;
+$black: #000;
+
+$dark-lighter-10: lighten($dark, 10%);
+$dark-lighter-20: lighten($dark, 20%);
+$dark-lighter-30: lighten($dark, 30%);
+$dark-lighter-40: lighten($dark, 40%);
+$dark-lighter-50: lighten($dark, 50%);
+$dark-lighter-60: lighten($dark, 60%);
+$dark-lighter-70: lighten($dark, 70%);
+$dark-lighter-80: lighten($dark, 80%);
+$dark-lighter-90: lighten($dark, 90%);
+
+$black-lighter-10: lighten($black, 10%);
+$black-lighter-20: lighten($black, 20%);
+$black-lighter-30: lighten($black, 30%);
+$black-lighter-40: lighten($black, 40%);
+$black-lighter-50: lighten($black, 50%);
+$black-lighter-60: lighten($black, 60%);
+$black-lighter-70: lighten($black, 70%);
+$black-lighter-80: lighten($black, 80%);
+$black-lighter-90: lighten($black, 90%);
+
+$link-color: $primary;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+body {
+  font-family: $primary-font;
+}
+
+a {
+  text-decoration: none; // Remove underline from all links
+
+  &:hover,
+  &:focus {
+    text-decoration: underline; // Underline on hover and focus
+  }
+}
+
+
+.logo {
+  max-width: 300px;
+  opacity: 0.25;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $secondary-font;
+  color: $dark;
+  font-weight: 700;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+}
+
+blockquote {
+  @extend .blockquote;
+}
+
+h1.page-title,
+.node__submitted {
+  margin-bottom: 1rem;
+}
+
+.node__submitted {
+  color: $black-lighter-50;
+}
+
+.article-list .list-group-item {
+  @extend .px-0;
+}
+
+.text-formatted {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  color: $black-lighter-50;
+}
+
+// .region-header {
+//   background-image:
+//     linear-gradient(rgba(18, 30, 52, 0.75),
+//       rgba(18, 30, 52, 0.75)),
+//     url('../kate.png');
+//   background-size: cover;
+//   /* Adjust the height as needed */
+// }
