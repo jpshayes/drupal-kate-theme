@@ -74,6 +74,12 @@ a {
   margin-bottom: -40px;
 }
 
+.menu.navbar-nav>li:last-child>a {
+  @extend .btn;
+  @extend .btn-outline-light;
+}
+
+
 .site-name {
   font-size: 3rem;
   font-weight: 100;
@@ -114,6 +120,14 @@ h4,
 h5,
 h6 {
   font-weight: 500;
+}
+
+.offcanvas-body h2 {
+  margin-bottom: 0
+}
+
+.off-canvas-pages .list-group>li:first-child {
+  padding-top: 5px;
 }
 
 blockquote {
