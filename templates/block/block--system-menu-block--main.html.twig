@@ -38,8 +38,9 @@
 {% set classes = [
   'navbar',
   'navbar-expand-lg',
-  'navbar-light',
-  'bg-light',
+  'navbar-dark',
+  'bg-transparent',
+  'fixed-top',
 ] %}
 <nav {{ attributes.addClass(classes) }} role="navigation">
   {% if not configuration.label_display %}

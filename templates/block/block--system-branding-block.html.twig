@@ -17,10 +17,10 @@
   Theme override for a branding block with Bootstrap 5 alignment.
 #}
 {% block content %}
-  <div class="row justify-content-center align-items-center py-5">
-    <div class="col-md-4 text-start">
+  <div class="grid text-center identity">
+    <div>
       {% if site_name %}
-        <div class="site-name h1">
+        <div class="site-name">
           <a href="{{ path('<front>') }}" rel="home">{{ site_name }}</a>
         </div>
       {% endif %}
@@ -30,7 +30,7 @@
     </div>
     
     {% if site_logo %}
-      <div class="col-md-4 text-end">
+      <div>
         <a href="{{ path('<front>') }}" rel="home" class="site-logo">
           <img class="img-fluid logo" src="{{ site_logo }}" alt="{{ 'Home'|t }}" />
         </a>

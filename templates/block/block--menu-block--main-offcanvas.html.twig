@@ -44,7 +44,7 @@
 {#
   Template for offcanvas menu block.
 #}
-<nav role="navigation" aria-labelledby="{{ heading_id }}"{{ attributes.addClass('offcanvas', 'offcanvas-end')|without('role', 'aria-labelledby') }} tabindex="-1" id="{{ attributes.id }}">
+<nav role="navigation" aria-labelledby="{{ heading_id }}"{{ attributes.addClass('offcanvas', 'offcanvas-start')|without('role', 'aria-labelledby') }} tabindex="-1" id="{{ attributes.id }}">
   <div class="offcanvas-header">
     <h5 class="offcanvas-title" id="{{ heading_id }}">{{ configuration.label }}</h5>
     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>

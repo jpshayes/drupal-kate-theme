@@ -24,6 +24,8 @@ $info: #17a2b8;
 $warning: #ffc107;
 $danger: #dc3545;
 $black: #000;
+$white: #fff;
+$transparent: transparent;
 
 $dark-lighter-10: lighten($dark, 10%);
 $dark-lighter-20: lighten($dark, 20%);
@@ -45,6 +47,8 @@ $black-lighter-70: lighten($black, 70%);
 $black-lighter-80: lighten($black, 80%);
 $black-lighter-90: lighten($black, 90%);
 
+$navbar-nav-link-padding-x: 1rem;
+
 $link-color: $primary;
 
 @import "../node_modules/bootstrap/scss/bootstrap";
@@ -62,10 +66,36 @@ a {
   }
 }
 
-
 .logo {
-  max-width: 300px;
-  opacity: 0.25;
+  max-width: 170px;
+}
+
+.identity {
+  margin-bottom: -40px;
+}
+
+.site-name {
+  font-size: 3rem;
+  font-weight: 100;
+  color: $white;
+  font-family: $secondary-font;
+
+  >a {
+    color: $white;
+  }
+}
+
+.breadcrumb {
+  @extend .my-1;
+  @extend .fst-italic;
+  @extend .text-muted;
+  @extend .small;
+}
+
+.node__links a {
+  @extend .btn;
+  @extend .btn-outline-primary;
+  @extend .btn-sm;
 }
 
 h1,
@@ -104,16 +134,7 @@ h1.page-title,
 }
 
 .text-formatted {
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   line-height: 1.5;
   color: $black-lighter-50;
 }
-
-// .region-header {
-//   background-image:
-//     linear-gradient(rgba(18, 30, 52, 0.75),
-//       rgba(18, 30, 52, 0.75)),
-//     url('../kate.png');
-//   background-size: cover;
-//   /* Adjust the height as needed */
-// }
