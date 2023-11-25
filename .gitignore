@@ -3,9 +3,6 @@
 
 # Node modules and related files
 node_modules/
-package.json
-package-lock.json
-gulpfile.js
 
 # Compiled CSS (if you compile SCSS/SASS to CSS)
 # Uncomment the line below if you generate CSS files from SCSS/SASS and want to ignore them
