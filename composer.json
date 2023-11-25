@@ -1,5 +1,5 @@
 {
-  "name": "jpshayes/drupal-kate-theme",
+  "name": "jpshayes/kate",
   "description": "A custom Drupal theme",
   "type": "drupal-custom-theme",
   "require": {
