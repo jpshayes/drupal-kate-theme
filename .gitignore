@@ -13,10 +13,10 @@ gulpfile.js
 
 # Source files (if they are not needed in production)
 # Uncomment the line below if you do not want to track the src/ folder
-# src/
+src/
 
 # Any other files or directories specific to your workflow that you don't want to track
 # Example:
-# build/
-# .env
+build/
+.env
 
