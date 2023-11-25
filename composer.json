@@ -1,8 +1,15 @@
 {
   "name": "jpshayes/drupal-kate-theme",
-  "description": "A custom Drupal thmeme",
-  "type": "drupal-theme",
+  "description": "A custom Drupal theme",
+  "type": "drupal-custom-theme",
   "require": {
-    "php": ">=8.2"
-  }
+    "php": ">=7.3"
+  },
+  "license": "GPL-2.0-or-later",
+  "authors": [
+    {
+      "name": "JP Hayes",
+      "email": "jpshayes@gmail.com"
+    }
+  ]
 }
