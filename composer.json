@@ -1,0 +1,8 @@
+{
+  "name": "jpshayes/drupal-kate-theme",
+  "description": "A custom Drupal thmeme",
+  "type": "drupal-theme",
+  "require": {
+    "php": ">=8.2"
+  }
+}
