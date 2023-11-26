@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400&display=swap');
-
-
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
 
 $primary-font: 'Roboto',
 sans-serif;
@@ -26,6 +27,13 @@ $danger: #dc3545;
 $black: #000;
 $white: #fff;
 $transparent: transparent;
+$lavender-web: #dadff7ff;
+$forest-green: #248232ff;
+$jet: #353535ff;
+$bittersweet: #fe5f55ff;
+$ecru: #c2a878ff;
+$deep-forrest-green: #182D09;
+
 
 $dark-lighter-10: lighten($dark, 10%);
 $dark-lighter-20: lighten($dark, 20%);
@@ -47,6 +55,34 @@ $black-lighter-70: lighten($black, 70%);
 $black-lighter-80: lighten($black, 80%);
 $black-lighter-90: lighten($black, 90%);
 
+$deep-forrest-green-lighter-10: lighten($deep-forrest-green, 10%);
+$deep-forrest-green-lighter-20: lighten($deep-forrest-green, 20%);
+$deep-forrest-green-lighter-30: lighten($deep-forrest-green, 30%);
+$deep-forrest-green-lighter-40: lighten($deep-forrest-green, 40%);
+$deep-forrest-green-lighter-50: lighten($deep-forrest-green, 50%);
+$deep-forrest-green-lighter-60: lighten($deep-forrest-green, 60%);
+$deep-forrest-green-lighter-70: lighten($deep-forrest-green, 70%);
+$deep-forrest-green-lighter-80: lighten($deep-forrest-green, 80%);
+$deep-forrest-green-lighter-90: lighten($deep-forrest-green, 90%);
+
+$theme-colors: map-merge($theme-colors, ("lavender-web": $lavender-web));
+$theme-colors: map-merge($theme-colors, ("forest-green": $forest-green));
+$theme-colors: map-merge($theme-colors, ("jet": $jet));
+$theme-colors: map-merge($theme-colors, ("bittersweet": $bittersweet));
+$theme-colors: map-merge($theme-colors, ("ecru": $ecru));
+$theme-colors: map-merge($theme-colors, ("deep-forrest-green": $deep-forrest-green));
+$theme-colors: map-merge($theme-colors, ("deep-forrest-green-lighter-10": $deep-forrest-green-lighter-10));
+$theme-colors: map-merge($theme-colors, ("deep-forrest-green-lighter-20": $deep-forrest-green-lighter-20));
+$theme-colors: map-merge($theme-colors, ("deep-forrest-green-lighter-30": $deep-forrest-green-lighter-30));
+$theme-colors: map-merge($theme-colors, ("deep-forrest-green-lighter-40": $deep-forrest-green-lighter-40));
+$theme-colors: map-merge($theme-colors, ("deep-forrest-green-lighter-50": $deep-forrest-green-lighter-50));
+$theme-colors: map-merge($theme-colors, ("deep-forrest-green-lighter-60": $deep-forrest-green-lighter-60));
+$theme-colors: map-merge($theme-colors, ("deep-forrest-green-lighter-70": $deep-forrest-green-lighter-70));
+$theme-colors: map-merge($theme-colors, ("deep-forrest-green-lighter-80": $deep-forrest-green-lighter-80));
+$theme-colors: map-merge($theme-colors, ("deep-forrest-green-lighter-90": $deep-forrest-green-lighter-90));
+
+
+
 $navbar-nav-link-padding-x: 1rem;
 
 $link-color: $primary;
@@ -64,6 +100,15 @@ a {
   &:focus {
     text-decoration: underline; // Underline on hover and focus
   }
+
+  .is-active & {
+    text-decoration: underline; // Underline on hover and focus
+    color: $primary;
+  }
+}
+
+ul.menu a.is-active {
+  color: $primary;
 }
 
 .logo {
