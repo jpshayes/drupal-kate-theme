@@ -97,6 +97,12 @@ a {
   }
 }
 
+a:hover,
+a:focus {
+  text-decoration: none; // Underline on hover and focus
+  color: $grey-green;
+}
+
 ul.menu a.is-active {
   color: $primary;
 }
@@ -148,6 +154,10 @@ h6 {
   font-family: $secondary-font;
   color: $dark;
   font-weight: 700;
+
+  a {
+    color: $dark;
+  }
 }
 
 h3,
