@@ -8422,7 +8422,7 @@ textarea.form-control-lg, textarea.form-text {
   width: auto !important;
 }
 
-.mw-100 {
+.mw-100, .main-login .user-login-form input {
   max-width: 100% !important;
 }
 

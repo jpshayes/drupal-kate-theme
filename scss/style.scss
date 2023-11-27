@@ -263,3 +263,7 @@ form p {
   @extend .btn;
   @extend .btn-outline-grey-green;
 }
+
+.main-login .user-login-form input {
+  @extend .mw-100;
+}
