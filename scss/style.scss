@@ -242,3 +242,24 @@ ul.menu a.is-active {
 h1.page-title {
   margin-bottom: 1rem;
 }
+
+// forms -----------------------------------------
+
+.form-text {
+  @extend .form-control;
+  @extend .form-control-lg;
+}
+
+.form-item {
+  @extend .mb-3;
+}
+
+form .description,
+form p {
+  @extend .text-muted;
+}
+
+.button {
+  @extend .btn;
+  @extend .btn-outline-grey-green;
+}
