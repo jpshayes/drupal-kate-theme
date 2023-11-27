@@ -194,11 +194,14 @@ h1.page-title,
   color: $black-lighter-50;
 }
 
+.article-menu a {
+  display: block;
+}
 
-.list-group-item.active {
+.article-menu .list-group-item.active {
   background-color: $white;
-  border-color: $white;
   color: $dark;
+  border-color: #dee2e6;
 
   a {
     color: $dark;

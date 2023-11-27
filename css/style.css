@@ -12942,12 +12942,16 @@ h1.page-title, .page-title.h1,
   color: gray;
 }
 
-.list-group-item.active {
-  background-color: #fff;
-  border-color: #fff;
-  color: #121e34;
+.article-menu a {
+  display: block;
 }
-.list-group-item.active a {
+
+.article-menu .list-group-item.active {
+  background-color: #fff;
+  color: #121e34;
+  border-color: #dee2e6;
+}
+.article-menu .list-group-item.active a {
   color: #121e34;
 }
 
