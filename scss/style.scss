@@ -9,13 +9,6 @@ sans-serif;
 $secondary-font: 'Montserrat',
 sans-serif;
 
-$h1-font-size: 3rem;
-$h2-font-size: 2.5rem;
-$h3-font-size: 2rem;
-$h4-font-size: 1.5rem;
-$h5-font-size: 1.25rem;
-$h6-font-size: 1rem;
-
 $primary: #fc3d3e;
 $light: #d3e3f1;
 $dark: #121e34;
@@ -72,29 +65,37 @@ $theme-colors: map-merge($theme-colors, ("soft-green": $soft-green));
 $theme-colors: map-merge($theme-colors, ("grey-green": $grey-green));
 
 
-$navbar-nav-link-padding-x: 1rem;
+// Bootstrap overrides ---------------------------
+// Headings --------------------------------------
+$h1-font-size: 3rem;
+$h2-font-size: 2.5rem;
+$h3-font-size: 2rem;
+$h4-font-size: 1.5rem;
+$h5-font-size: 1.25rem;
+$h6-font-size: 1rem;
 
+// Navbar ----------------------------------------
+$navbar-nav-link-padding-x: 1rem;
+$dropdown-link-active-bg: $soft-green;
+$dropdown-dark-link-active-bg: $soft-green;
+
+.dropdown-item:active {
+  color: $white;
+  background-color: $grey-green;
+}
+
+// Links ----------------------------------------
 $link-color: $soft-green;
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
+// HTML Element Selectors ------------------------
 body {
   font-family: $primary-font;
 }
 
 a {
   text-decoration: none; // Remove underline from all links
-
-  &:hover,
-  &:focus {
-    text-decoration: none; // Underline on hover and focus
-    color: $grey-green;
-  }
-
-  .is-active & {
-    text-decoration: underline; // Underline on hover and focus
-    color: $primary;
-  }
 }
 
 a:hover,
@@ -103,10 +104,30 @@ a:focus {
   color: $grey-green;
 }
 
-ul.menu a.is-active {
-  color: $primary;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $secondary-font;
+  color: $dark;
+  font-weight: 700;
 }
 
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+}
+
+blockquote {
+  @extend .blockquote;
+  font-weight: 300;
+}
+
+// Class Selectors -------------------------------
 .logo {
   max-width: 170px;
 }
@@ -115,21 +136,11 @@ ul.menu a.is-active {
   margin-bottom: -40px;
 }
 
-.menu.navbar-nav>li:last-child>a {
-  @extend .btn;
-  @extend .btn-outline-light;
-}
-
-
 .site-name {
   font-size: 3rem;
   font-weight: 100;
   color: $white;
   font-family: $secondary-font;
-
-  >a {
-    color: $white;
-  }
 }
 
 .breadcrumb {
@@ -145,46 +156,12 @@ ul.menu a.is-active {
   @extend .btn-sm;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: $secondary-font;
-  color: $dark;
-  font-weight: 700;
-
-  a {
-    color: $dark;
-  }
-}
-
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 500;
-}
-
 .offcanvas-body h2 {
   margin-bottom: 0
 }
 
-.off-canvas-pages .list-group>li:first-child {
-  padding-top: 5px;
-}
-
-blockquote {
-  @extend .blockquote;
-}
-
-h1.page-title,
 .node__submitted {
   margin-bottom: 1rem;
-}
-
-.node__submitted {
   color: $black-lighter-50;
 }
 
@@ -202,8 +179,67 @@ h1.page-title,
   background-color: $white;
   color: $dark;
   border-color: #dee2e6;
+}
 
+// Nested Selectors and Pseudo-classes -----------
+a {
+
+  &:hover,
+  &:focus {
+    text-decoration: none; // Underline on hover and focus
+    color: $grey-green;
+  }
+
+  .is-active & {
+    text-decoration: underline; // Underline on hover and focus
+    color: $primary;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   a {
     color: $dark;
   }
+}
+
+.site-name {
+  >a {
+    color: $white;
+  }
+}
+
+.article-menu .list-group-item.active {
+  a {
+    color: $dark;
+  }
+}
+
+// Complex Selectors ------------------------------
+
+ul.menu a.is-active {
+  color: $primary;
+}
+
+.menu.navbar-nav>li:last-child>a {
+  @extend .btn;
+  @extend .btn-outline-light;
+}
+
+.dropdown-menu .active a {
+  color: $white;
+  background-color: $grey-green;
+}
+
+.off-canvas-pages .list-group>li:first-child {
+  padding-top: 5px;
+}
+
+h1.page-title,
+.node__submitted {
+  margin-bottom: 1rem;
 }
