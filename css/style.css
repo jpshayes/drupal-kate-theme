@@ -8843,7 +8843,7 @@ textarea.form-control-lg {
   padding: 3rem !important;
 }
 
-.px-0, .article-list .list-group-item {
+.px-0 {
   padding-right: 0 !important;
   padding-left: 0 !important;
 }
@@ -12940,6 +12940,15 @@ h1.page-title, .page-title.h1,
   font-size: 1.1rem;
   line-height: 1.5;
   color: gray;
+}
+
+.list-group-item.active {
+  background-color: #fff;
+  border-color: #fff;
+  color: #121e34;
+}
+.list-group-item.active a {
+  color: #121e34;
 }
 
 /*# sourceMappingURL=style.css.map */
