@@ -3294,7 +3294,7 @@ textarea.form-control-lg {
   --bs-btn-disabled-border-color: #5C6358;
 }
 
-.btn-outline-primary, .node__links a {
+.btn-outline-primary {
   --bs-btn-color: #0d6efd;
   --bs-btn-border-color: #0d6efd;
   --bs-btn-hover-color: #fff;
@@ -3583,7 +3583,7 @@ textarea.form-control-lg {
   --bs-gradient: none;
 }
 
-.btn-outline-grey-green {
+.btn-outline-grey-green, .node__links a {
   --bs-btn-color: #5C6358;
   --bs-btn-border-color: #5C6358;
   --bs-btn-hover-color: #fff;
