@@ -66,7 +66,6 @@ $deep-forrest-green-lighter-70: lighten($deep-forrest-green, 70%);
 $deep-forrest-green-lighter-80: lighten($deep-forrest-green, 80%);
 $deep-forrest-green-lighter-90: lighten($deep-forrest-green, 90%);
 
-$theme-colors: map-merge($theme-colors, ("primary": $primary));
 $theme-colors: map-merge($theme-colors, ("lavender-web": $lavender-web));
 $theme-colors: map-merge($theme-colors, ("forest-green": $forest-green));
 $theme-colors: map-merge($theme-colors, ("jet": $jet));
@@ -86,7 +85,7 @@ $theme-colors: map-merge($theme-colors, ("deep-forrest-green-lighter-90": $deep-
 
 $navbar-nav-link-padding-x: 1rem;
 
-$link-color: $primary;
+$link-color: $secondary;
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
