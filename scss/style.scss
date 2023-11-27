@@ -32,7 +32,11 @@ $forest-green: #248232ff;
 $jet: #353535ff;
 $bittersweet: #fe5f55ff;
 $ecru: #c2a878ff;
-$deep-forrest-green: #182D09;
+$deep-forest-green: #182D09;
+$ultra-violet: #545677;
+$earth-yellow: #EAB464;
+$soft-green: #7A9666;
+$grey-green: #5C6358;
 
 
 
@@ -56,36 +60,21 @@ $black-lighter-70: lighten($black, 70%);
 $black-lighter-80: lighten($black, 80%);
 $black-lighter-90: lighten($black, 90%);
 
-$deep-forrest-green-lighter-10: lighten($deep-forrest-green, 10%);
-$deep-forrest-green-lighter-20: lighten($deep-forrest-green, 20%);
-$deep-forrest-green-lighter-30: lighten($deep-forrest-green, 30%);
-$deep-forrest-green-lighter-40: lighten($deep-forrest-green, 40%);
-$deep-forrest-green-lighter-50: lighten($deep-forrest-green, 50%);
-$deep-forrest-green-lighter-60: lighten($deep-forrest-green, 60%);
-$deep-forrest-green-lighter-70: lighten($deep-forrest-green, 70%);
-$deep-forrest-green-lighter-80: lighten($deep-forrest-green, 80%);
-$deep-forrest-green-lighter-90: lighten($deep-forrest-green, 90%);
-
 $theme-colors: map-merge($theme-colors, ("lavender-web": $lavender-web));
 $theme-colors: map-merge($theme-colors, ("forest-green": $forest-green));
 $theme-colors: map-merge($theme-colors, ("jet": $jet));
 $theme-colors: map-merge($theme-colors, ("bittersweet": $bittersweet));
 $theme-colors: map-merge($theme-colors, ("ecru": $ecru));
-$theme-colors: map-merge($theme-colors, ("deep-forrest-green": $deep-forrest-green));
-$theme-colors: map-merge($theme-colors, ("deep-forrest-green-lighter-10": $deep-forrest-green-lighter-10));
-$theme-colors: map-merge($theme-colors, ("deep-forrest-green-lighter-20": $deep-forrest-green-lighter-20));
-$theme-colors: map-merge($theme-colors, ("deep-forrest-green-lighter-30": $deep-forrest-green-lighter-30));
-$theme-colors: map-merge($theme-colors, ("deep-forrest-green-lighter-40": $deep-forrest-green-lighter-40));
-$theme-colors: map-merge($theme-colors, ("deep-forrest-green-lighter-50": $deep-forrest-green-lighter-50));
-$theme-colors: map-merge($theme-colors, ("deep-forrest-green-lighter-60": $deep-forrest-green-lighter-60));
-$theme-colors: map-merge($theme-colors, ("deep-forrest-green-lighter-70": $deep-forrest-green-lighter-70));
-$theme-colors: map-merge($theme-colors, ("deep-forrest-green-lighter-80": $deep-forrest-green-lighter-80));
-$theme-colors: map-merge($theme-colors, ("deep-forrest-green-lighter-90": $deep-forrest-green-lighter-90));
+$theme-colors: map-merge($theme-colors, ("ultra-violet": $ultra-violet));
+$theme-colors: map-merge($theme-colors, ("deep-forest-green": $deep-forest-green));
+$theme-colors: map-merge($theme-colors, ("earth-yellow": $earth-yellow));
+$theme-colors: map-merge($theme-colors, ("soft-green": $soft-green));
+$theme-colors: map-merge($theme-colors, ("grey-green": $grey-green));
 
 
 $navbar-nav-link-padding-x: 1rem;
 
-$link-color: $secondary;
+$link-color: $soft-green;
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
@@ -98,7 +87,8 @@ a {
 
   &:hover,
   &:focus {
-    text-decoration: underline; // Underline on hover and focus
+    text-decoration: none; // Underline on hover and focus
+    color: $grey-green;
   }
 
   .is-active & {
