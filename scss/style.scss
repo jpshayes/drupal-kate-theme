@@ -267,3 +267,8 @@ form p {
 .main-login .user-login-form input {
   @extend .mw-100;
 }
+
+.field--name-field-footnotes>* {
+  @extend .text-muted;
+  @extend .small;
+}

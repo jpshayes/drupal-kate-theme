@@ -346,7 +346,7 @@ strong {
   font-weight: bolder;
 }
 
-small, .small, .breadcrumb {
+small, .small, .field--name-field-footnotes > *, .breadcrumb {
   font-size: 0.875em;
 }
 
@@ -9336,7 +9336,7 @@ textarea.form-control-lg, textarea.form-text {
   color: rgba(var(--bs-body-color-rgb), var(--bs-text-opacity)) !important;
 }
 
-.text-muted, form .description,
+.text-muted, .field--name-field-footnotes > *, form .description,
 form p, .breadcrumb {
   --bs-text-opacity: 1;
   color: var(--bs-secondary-color) !important;
