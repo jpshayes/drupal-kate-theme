@@ -22,3 +22,7 @@ jobs:
     - name: Deploy to Server
       run: |
         rsync -avz --exclude='.git/' --delete ./ deploy@katejolene.com:/var/www/katejolene.com/web/themes/custom/kate
+
+    - name: Clear Cache
+      run: |
+        ssh deploy@katejolene.com "cd /var/www/katejolene.com/web/sites/default && drush cache:clear theme-registry && drush cache:clear css-js"
