@@ -25,4 +25,4 @@ jobs:
 
     - name: Clear Cache
       run: |
-        ssh deploy@katejolene.com "cd /var/www/katejolene.com/web/sites/default && drush cache:clear theme-registry && drush cache:clear css-js"
+        ssh deploy@katejolene.com "cd /var/www/katejolene.com/web/sites/default && /var/www/katejolene.com/vendor/bin/drush cache:clear theme-registry && /var/www/katejolene.com/vendor/bin/drush cache:clear css-js"
