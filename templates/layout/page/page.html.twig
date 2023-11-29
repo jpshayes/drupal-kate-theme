@@ -103,11 +103,15 @@
 
 
   {% if page.footer %}
-  <div class="container-fluid">
-    <footer class="bg-dark text-white py-3" role="contentinfo"> <!-- Added Bootstrap classes for styling -->
-      {{ page.footer }}
-    </footer>
-  </div>
+  <footer class="text-white bg-secondary" role="contentinfo">
+    <div class="container bg-secondary">
+      <div class="row mb-0 py-5">
+        <div class="col">
+        {{ page.footer }}
+        </div>
+      </div>
+    </div>
+  </footer>
   {% endif %}
 
   {% if page.offcanvas %}

@@ -9,10 +9,10 @@ sans-serif;
 $secondary-font: 'Montserrat',
 sans-serif;
 
-$primary: #fc3d3e;
-$light: #d3e3f1;
+$primary: #182D09;
+$light: #7A9666;
 $dark: #121e34;
-$secondary: #6c757d;
+$secondary: #5C6358;
 $success: #28a745;
 $info: #17a2b8;
 $warning: #ffc107;
@@ -20,50 +20,17 @@ $danger: #dc3545;
 $black: #000;
 $white: #fff;
 $transparent: transparent;
-$lavender-web: #dadff7ff;
-$forest-green: #248232ff;
-$jet: #353535ff;
-$bittersweet: #fe5f55ff;
-$ecru: #c2a878ff;
-$deep-forest-green: #182D09;
-$ultra-violet: #545677;
-$earth-yellow: #EAB464;
-$soft-green: #7A9666;
-$grey-green: #5C6358;
 
-
-
-$dark-lighter-10: lighten($dark, 10%);
-$dark-lighter-20: lighten($dark, 20%);
-$dark-lighter-30: lighten($dark, 30%);
-$dark-lighter-40: lighten($dark, 40%);
-$dark-lighter-50: lighten($dark, 50%);
-$dark-lighter-60: lighten($dark, 60%);
-$dark-lighter-70: lighten($dark, 70%);
-$dark-lighter-80: lighten($dark, 80%);
-$dark-lighter-90: lighten($dark, 90%);
-
-$black-lighter-10: lighten($black, 10%);
-$black-lighter-20: lighten($black, 20%);
-$black-lighter-30: lighten($black, 30%);
-$black-lighter-40: lighten($black, 40%);
-$black-lighter-50: lighten($black, 50%);
-$black-lighter-60: lighten($black, 60%);
-$black-lighter-70: lighten($black, 70%);
-$black-lighter-80: lighten($black, 80%);
-$black-lighter-90: lighten($black, 90%);
-
-$theme-colors: map-merge($theme-colors, ("lavender-web": $lavender-web));
-$theme-colors: map-merge($theme-colors, ("forest-green": $forest-green));
-$theme-colors: map-merge($theme-colors, ("jet": $jet));
-$theme-colors: map-merge($theme-colors, ("bittersweet": $bittersweet));
-$theme-colors: map-merge($theme-colors, ("ecru": $ecru));
-$theme-colors: map-merge($theme-colors, ("ultra-violet": $ultra-violet));
-$theme-colors: map-merge($theme-colors, ("deep-forest-green": $deep-forest-green));
-$theme-colors: map-merge($theme-colors, ("earth-yellow": $earth-yellow));
-$theme-colors: map-merge($theme-colors, ("soft-green": $soft-green));
-$theme-colors: map-merge($theme-colors, ("grey-green": $grey-green));
-
+$theme-colors: ("primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
+  "light": $light,
+  "dark": $dark,
+  "transparent": $transparent,
+);
 
 // Bootstrap overrides ---------------------------
 // Headings --------------------------------------
@@ -76,16 +43,16 @@ $h6-font-size: 1rem;
 
 // Navbar ----------------------------------------
 $navbar-nav-link-padding-x: 1rem;
-$dropdown-link-active-bg: $soft-green;
-$dropdown-dark-link-active-bg: $soft-green;
+$dropdown-link-active-bg: $light;
+$dropdown-dark-link-active-bg: $light;
 
 .dropdown-item:active {
   color: $white;
-  background-color: $grey-green;
+  background-color: $secondary;
 }
 
 // Links ----------------------------------------
-$link-color: $soft-green;
+$link-color: $light;
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
@@ -101,7 +68,7 @@ a {
 a:hover,
 a:focus {
   text-decoration: none; // Underline on hover and focus
-  color: $grey-green;
+  color: $secondary;
 }
 
 h1,
@@ -152,7 +119,7 @@ blockquote {
 
 .node__links a {
   @extend .btn;
-  @extend .btn-outline-grey-green;
+  @extend .btn-outline-secondary;
   @extend .btn-sm;
 }
 
@@ -162,13 +129,13 @@ blockquote {
 
 .node__submitted {
   margin-bottom: 1rem;
-  color: $black-lighter-50;
+  @extend .text-body-secondary;
 }
 
 .text-formatted {
   font-size: 1.1rem;
   line-height: 1.5;
-  color: $black-lighter-50;
+  @extend .text-body-secondary;
 }
 
 .article-menu a {
@@ -187,7 +154,7 @@ a {
   &:hover,
   &:focus {
     text-decoration: none; // Underline on hover and focus
-    color: $grey-green;
+    color: $secondary;
   }
 
   .is-active & {
@@ -232,7 +199,7 @@ ul.menu a.is-active {
 
 .dropdown-menu .active a {
   color: $white;
-  background-color: $grey-green;
+  background-color: $secondary;
 }
 
 .off-canvas-pages .list-group>li:first-child {
@@ -245,9 +212,10 @@ h1.page-title {
 
 // forms -----------------------------------------
 
-.form-text {
+.form-text,
+.form-email,
+.form-textarea {
   @extend .form-control;
-  @extend .form-control-lg;
 }
 
 .form-item {
@@ -261,7 +229,7 @@ form p {
 
 .button {
   @extend .btn;
-  @extend .btn-outline-grey-green;
+  @extend .btn-outline-secondary;
 }
 
 .main-login .user-login-form input {
@@ -271,4 +239,15 @@ form p {
 .field--name-field-footnotes>* {
   @extend .text-muted;
   @extend .small;
+}
+
+form label {
+  @extend .form-label;
+  display: block;
+}
+
+.webform-actions input {
+  @extend .btn;
+  @extend .btn-lg;
+  @extend .btn-secondary;
 }
