@@ -21,4 +21,4 @@ jobs:
 
     - name: Deploy to Server
       run: |
-        rsync -avz --exclude='.git/' ./ deploy@katejolene.com:/var/www/katejolene.com/web/themes/custom/kate
+        rsync -avz --exclude='.git/' --delete ./ deploy@katejolene.com:/var/www/katejolene.com/web/themes/custom/kate
