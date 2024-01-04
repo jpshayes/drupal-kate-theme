@@ -217,10 +217,10 @@ ul.menu a.is-active {
   color: $primary;
 }
 
-.menu.navbar-nav>li:last-child>a {
-  @extend .btn;
-  @extend .btn-outline-light;
-}
+// .menu.navbar-nav>li:last-child>a {
+//   @extend .btn;
+//   @extend .btn-outline-light;
+// }
 
 .dropdown-menu .active a {
   color: $white;
@@ -311,3 +311,18 @@ form label {
 html, body {
   height: 100%;
 }
+
+@media (max-width: 767px) {
+    img {
+        width: 50%; /* Example: reducing the width */
+        height: auto;
+    }
+}
+
+.bg-dark-transparent {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.nav-link, ul.menu a.is-active {
+    color: #fff;
+} 

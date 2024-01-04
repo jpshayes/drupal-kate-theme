@@ -2470,7 +2470,7 @@ textarea.form-control-lg {
   clip: rect(0, 0, 0, 0);
   pointer-events: none;
 }
-.btn-check[disabled] + .btn, .webform-actions .btn-check[disabled] + input, .btn-check[disabled] + .button, .menu.navbar-nav > li:last-child > .btn-check[disabled] + a, .node__links .btn-check[disabled] + a, .btn-check:disabled + .btn, .webform-actions .btn-check:disabled + input, .btn-check:disabled + .button, .menu.navbar-nav > li:last-child > .btn-check:disabled + a, .node__links .btn-check:disabled + a {
+.btn-check[disabled] + .btn, .webform-actions .btn-check[disabled] + input, .btn-check[disabled] + .button, .node__links .btn-check[disabled] + a, .btn-check:disabled + .btn, .webform-actions .btn-check:disabled + input, .btn-check:disabled + .button, .node__links .btn-check:disabled + a {
   pointer-events: none;
   filter: none;
   opacity: 0.65;
@@ -2699,11 +2699,11 @@ textarea.form-control-lg {
 .input-group > .form-floating:focus-within {
   z-index: 5;
 }
-.input-group .btn, .input-group .webform-actions input, .webform-actions .input-group input, .input-group .button, .input-group .menu.navbar-nav > li:last-child > a, .input-group .node__links a, .node__links .input-group a {
+.input-group .btn, .input-group .webform-actions input, .webform-actions .input-group input, .input-group .button, .input-group .node__links a, .node__links .input-group a {
   position: relative;
   z-index: 2;
 }
-.input-group .btn:focus, .input-group .webform-actions input:focus, .webform-actions .input-group input:focus, .input-group .button:focus, .input-group .menu.navbar-nav > li:last-child > a:focus, .input-group .node__links a:focus, .node__links .input-group a:focus {
+.input-group .btn:focus, .input-group .webform-actions input:focus, .webform-actions .input-group input:focus, .input-group .button:focus, .input-group .node__links a:focus, .node__links .input-group a:focus {
   z-index: 5;
 }
 
@@ -2730,7 +2730,6 @@ textarea.form-control-lg {
 .input-group-lg > .btn,
 .webform-actions .input-group-lg > input,
 .input-group-lg > .button,
-.menu.navbar-nav > li.input-group-lg:last-child > a,
 .node__links .input-group-lg > a {
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
@@ -2745,7 +2744,6 @@ textarea.form-control-lg {
 .input-group-sm > .btn,
 .webform-actions .input-group-sm > input,
 .input-group-sm > .button,
-.menu.navbar-nav > li.input-group-sm:last-child > a,
 .node__links .input-group-sm > a {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
@@ -3002,7 +3000,7 @@ textarea.is-invalid.form-textarea {
   z-index: 4;
 }
 
-.btn, .webform-actions input, .button, .menu.navbar-nav > li:last-child > a, .node__links a {
+.btn, .webform-actions input, .button, .node__links a {
   --bs-btn-padding-x: 0.75rem;
   --bs-btn-padding-y: 0.375rem;
   --bs-btn-font-family: ;
@@ -3036,41 +3034,41 @@ textarea.is-invalid.form-textarea {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
-  .btn, .webform-actions input, .button, .menu.navbar-nav > li:last-child > a, .node__links a {
+  .btn, .webform-actions input, .button, .node__links a {
     transition: none;
   }
 }
-.btn:hover, .webform-actions input:hover, .button:hover, .menu.navbar-nav > li:last-child > a:hover, .node__links a:hover {
+.btn:hover, .webform-actions input:hover, .button:hover, .node__links a:hover {
   color: var(--bs-btn-hover-color);
   background-color: var(--bs-btn-hover-bg);
   border-color: var(--bs-btn-hover-border-color);
 }
-.btn-check + .btn:hover, .webform-actions .btn-check + input:hover, .btn-check + .button:hover, .menu.navbar-nav > li:last-child > .btn-check + a:hover, .node__links .btn-check + a:hover {
+.btn-check + .btn:hover, .webform-actions .btn-check + input:hover, .btn-check + .button:hover, .node__links .btn-check + a:hover {
   color: var(--bs-btn-color);
   background-color: var(--bs-btn-bg);
   border-color: var(--bs-btn-border-color);
 }
-.btn:focus-visible, .webform-actions input:focus-visible, .button:focus-visible, .menu.navbar-nav > li:last-child > a:focus-visible, .node__links a:focus-visible {
+.btn:focus-visible, .webform-actions input:focus-visible, .button:focus-visible, .node__links a:focus-visible {
   color: var(--bs-btn-hover-color);
   background-color: var(--bs-btn-hover-bg);
   border-color: var(--bs-btn-hover-border-color);
   outline: 0;
   box-shadow: var(--bs-btn-focus-box-shadow);
 }
-.btn-check:focus-visible + .btn, .webform-actions .btn-check:focus-visible + input, .btn-check:focus-visible + .button, .menu.navbar-nav > li:last-child > .btn-check:focus-visible + a, .node__links .btn-check:focus-visible + a {
+.btn-check:focus-visible + .btn, .webform-actions .btn-check:focus-visible + input, .btn-check:focus-visible + .button, .node__links .btn-check:focus-visible + a {
   border-color: var(--bs-btn-hover-border-color);
   outline: 0;
   box-shadow: var(--bs-btn-focus-box-shadow);
 }
-.btn-check:checked + .btn, .webform-actions .btn-check:checked + input, .btn-check:checked + .button, .menu.navbar-nav > li:last-child > .btn-check:checked + a, .node__links .btn-check:checked + a, :not(.btn-check) + .btn:active, .webform-actions :not(.btn-check) + input:active, :not(.btn-check) + .button:active, .menu.navbar-nav > li:last-child > :not(.btn-check) + a:active, .node__links :not(.btn-check) + a:active, .btn:first-child:active, .webform-actions input:first-child:active, .button:first-child:active, .menu.navbar-nav > li:last-child > a:first-child:active, .node__links a:first-child:active, .btn.active, .webform-actions input.active, .active.button, .menu.navbar-nav > li:last-child > a.active, .node__links a.active, .btn.show, .webform-actions input.show, .show.button, .menu.navbar-nav > li:last-child > a.show, .node__links a.show {
+.btn-check:checked + .btn, .webform-actions .btn-check:checked + input, .btn-check:checked + .button, .node__links .btn-check:checked + a, :not(.btn-check) + .btn:active, .webform-actions :not(.btn-check) + input:active, :not(.btn-check) + .button:active, .node__links :not(.btn-check) + a:active, .btn:first-child:active, .webform-actions input:first-child:active, .button:first-child:active, .node__links a:first-child:active, .btn.active, .webform-actions input.active, .active.button, .node__links a.active, .btn.show, .webform-actions input.show, .show.button, .node__links a.show {
   color: var(--bs-btn-active-color);
   background-color: var(--bs-btn-active-bg);
   border-color: var(--bs-btn-active-border-color);
 }
-.btn-check:checked + .btn:focus-visible, .webform-actions .btn-check:checked + input:focus-visible, .btn-check:checked + .button:focus-visible, .menu.navbar-nav > li:last-child > .btn-check:checked + a:focus-visible, .node__links .btn-check:checked + a:focus-visible, :not(.btn-check) + .btn:active:focus-visible, .webform-actions :not(.btn-check) + input:active:focus-visible, :not(.btn-check) + .button:active:focus-visible, .menu.navbar-nav > li:last-child > :not(.btn-check) + a:active:focus-visible, .node__links :not(.btn-check) + a:active:focus-visible, .btn:first-child:active:focus-visible, .webform-actions input:first-child:active:focus-visible, .button:first-child:active:focus-visible, .menu.navbar-nav > li:last-child > a:first-child:active:focus-visible, .node__links a:first-child:active:focus-visible, .btn.active:focus-visible, .webform-actions input.active:focus-visible, .active.button:focus-visible, .menu.navbar-nav > li:last-child > a.active:focus-visible, .node__links a.active:focus-visible, .btn.show:focus-visible, .webform-actions input.show:focus-visible, .show.button:focus-visible, .menu.navbar-nav > li:last-child > a.show:focus-visible, .node__links a.show:focus-visible {
+.btn-check:checked + .btn:focus-visible, .webform-actions .btn-check:checked + input:focus-visible, .btn-check:checked + .button:focus-visible, .node__links .btn-check:checked + a:focus-visible, :not(.btn-check) + .btn:active:focus-visible, .webform-actions :not(.btn-check) + input:active:focus-visible, :not(.btn-check) + .button:active:focus-visible, .node__links :not(.btn-check) + a:active:focus-visible, .btn:first-child:active:focus-visible, .webform-actions input:first-child:active:focus-visible, .button:first-child:active:focus-visible, .node__links a:first-child:active:focus-visible, .btn.active:focus-visible, .webform-actions input.active:focus-visible, .active.button:focus-visible, .node__links a.active:focus-visible, .btn.show:focus-visible, .webform-actions input.show:focus-visible, .show.button:focus-visible, .node__links a.show:focus-visible {
   box-shadow: var(--bs-btn-focus-box-shadow);
 }
-.btn:disabled, .webform-actions input:disabled, .button:disabled, .menu.navbar-nav > li:last-child > a:disabled, .node__links a:disabled, .btn.disabled, .webform-actions input.disabled, .disabled.button, .menu.navbar-nav > li:last-child > a.disabled, .node__links a.disabled, fieldset:disabled .btn, fieldset:disabled .webform-actions input, .webform-actions fieldset:disabled input, fieldset:disabled .button, fieldset:disabled .menu.navbar-nav > li:last-child > a, fieldset:disabled .node__links a, .node__links fieldset:disabled a {
+.btn:disabled, .webform-actions input:disabled, .button:disabled, .node__links a:disabled, .btn.disabled, .webform-actions input.disabled, .disabled.button, .node__links a.disabled, fieldset:disabled .btn, fieldset:disabled .webform-actions input, .webform-actions fieldset:disabled input, fieldset:disabled .button, fieldset:disabled .node__links a, .node__links fieldset:disabled a {
   color: var(--bs-btn-disabled-color);
   pointer-events: none;
   background-color: var(--bs-btn-disabled-bg);
@@ -3333,7 +3331,7 @@ textarea.is-invalid.form-textarea {
   --bs-gradient: none;
 }
 
-.btn-outline-light, .menu.navbar-nav > li:last-child > a {
+.btn-outline-light {
   --bs-btn-color: #7A9666;
   --bs-btn-border-color: #7A9666;
   --bs-btn-hover-color: #000;
@@ -3406,14 +3404,14 @@ textarea.is-invalid.form-textarea {
   color: var(--bs-btn-hover-color);
 }
 
-.btn-lg, .webform-actions input, .btn-group-lg > .btn, .webform-actions .btn-group-lg > input, .btn-group-lg > .button, .menu.navbar-nav > li.btn-group-lg:last-child > a, .node__links .btn-group-lg > a {
+.btn-lg, .webform-actions input, .btn-group-lg > .btn, .webform-actions .btn-group-lg > input, .btn-group-lg > .button, .node__links .btn-group-lg > a {
   --bs-btn-padding-y: 0.5rem;
   --bs-btn-padding-x: 1rem;
   --bs-btn-font-size: 1.25rem;
   --bs-btn-border-radius: var(--bs-border-radius-lg);
 }
 
-.btn-sm, .node__links a, .btn-group-sm > .btn, .webform-actions .btn-group-sm > input, .btn-group-sm > .button, .menu.navbar-nav > li.btn-group-sm:last-child > a, .node__links .btn-group-sm > a {
+.btn-sm, .node__links a, .btn-group-sm > .btn, .webform-actions .btn-group-sm > input, .btn-group-sm > .button, .node__links .btn-group-sm > a {
   --bs-btn-padding-y: 0.25rem;
   --bs-btn-padding-x: 0.5rem;
   --bs-btn-font-size: 0.875rem;
@@ -3780,70 +3778,58 @@ textarea.is-invalid.form-textarea {
   display: inline-flex;
   vertical-align: middle;
 }
-.btn-group > .btn, .webform-actions .btn-group > input, .btn-group > .button, .menu.navbar-nav > li.btn-group:last-child > a, .node__links .btn-group > a,
+.btn-group > .btn, .webform-actions .btn-group > input, .btn-group > .button, .node__links .btn-group > a,
 .btn-group-vertical > .btn,
 .webform-actions .btn-group-vertical > input,
 .btn-group-vertical > .button,
-.menu.navbar-nav > li.btn-group-vertical:last-child > a,
 .node__links .btn-group-vertical > a {
   position: relative;
   flex: 1 1 auto;
 }
-.btn-group > .btn-check:checked + .btn, .webform-actions .btn-group > .btn-check:checked + input, .btn-group > .btn-check:checked + .button, .menu.navbar-nav > li.btn-group:last-child > .btn-check:checked + a, .node__links .btn-group > .btn-check:checked + a,
+.btn-group > .btn-check:checked + .btn, .webform-actions .btn-group > .btn-check:checked + input, .btn-group > .btn-check:checked + .button, .node__links .btn-group > .btn-check:checked + a,
 .btn-group > .btn-check:focus + .btn,
 .webform-actions .btn-group > .btn-check:focus + input,
 .btn-group > .btn-check:focus + .button,
-.menu.navbar-nav > li.btn-group:last-child > .btn-check:focus + a,
 .node__links .btn-group > .btn-check:focus + a,
 .btn-group > .btn:hover,
 .webform-actions .btn-group > input:hover,
 .btn-group > .button:hover,
-.menu.navbar-nav > li.btn-group:last-child > a:hover,
 .node__links .btn-group > a:hover,
 .btn-group > .btn:focus,
 .webform-actions .btn-group > input:focus,
 .btn-group > .button:focus,
-.menu.navbar-nav > li.btn-group:last-child > a:focus,
 .node__links .btn-group > a:focus,
 .btn-group > .btn:active,
 .webform-actions .btn-group > input:active,
 .btn-group > .button:active,
-.menu.navbar-nav > li.btn-group:last-child > a:active,
 .node__links .btn-group > a:active,
 .btn-group > .btn.active,
 .webform-actions .btn-group > input.active,
 .btn-group > .active.button,
-.menu.navbar-nav > li.btn-group:last-child > a.active,
 .node__links .btn-group > a.active,
 .btn-group-vertical > .btn-check:checked + .btn,
 .webform-actions .btn-group-vertical > .btn-check:checked + input,
 .btn-group-vertical > .btn-check:checked + .button,
-.menu.navbar-nav > li.btn-group-vertical:last-child > .btn-check:checked + a,
 .node__links .btn-group-vertical > .btn-check:checked + a,
 .btn-group-vertical > .btn-check:focus + .btn,
 .webform-actions .btn-group-vertical > .btn-check:focus + input,
 .btn-group-vertical > .btn-check:focus + .button,
-.menu.navbar-nav > li.btn-group-vertical:last-child > .btn-check:focus + a,
 .node__links .btn-group-vertical > .btn-check:focus + a,
 .btn-group-vertical > .btn:hover,
 .webform-actions .btn-group-vertical > input:hover,
 .btn-group-vertical > .button:hover,
-.menu.navbar-nav > li.btn-group-vertical:last-child > a:hover,
 .node__links .btn-group-vertical > a:hover,
 .btn-group-vertical > .btn:focus,
 .webform-actions .btn-group-vertical > input:focus,
 .btn-group-vertical > .button:focus,
-.menu.navbar-nav > li.btn-group-vertical:last-child > a:focus,
 .node__links .btn-group-vertical > a:focus,
 .btn-group-vertical > .btn:active,
 .webform-actions .btn-group-vertical > input:active,
 .btn-group-vertical > .button:active,
-.menu.navbar-nav > li.btn-group-vertical:last-child > a:active,
 .node__links .btn-group-vertical > a:active,
 .btn-group-vertical > .btn.active,
 .webform-actions .btn-group-vertical > input.active,
 .btn-group-vertical > .active.button,
-.menu.navbar-nav > li.btn-group-vertical:last-child > a.active,
 .node__links .btn-group-vertical > a.active {
   z-index: 1;
 }
@@ -3860,34 +3846,30 @@ textarea.is-invalid.form-textarea {
 .btn-group {
   border-radius: var(--bs-border-radius);
 }
-.btn-group > :not(.btn-check:first-child) + .btn, .webform-actions .btn-group > :not(.btn-check:first-child) + input, .btn-group > :not(.btn-check:first-child) + .button, .menu.navbar-nav > li.btn-group:last-child > :not(.btn-check:first-child) + a, .node__links .btn-group > :not(.btn-check:first-child) + a,
+.btn-group > :not(.btn-check:first-child) + .btn, .webform-actions .btn-group > :not(.btn-check:first-child) + input, .btn-group > :not(.btn-check:first-child) + .button, .node__links .btn-group > :not(.btn-check:first-child) + a,
 .btn-group > .btn-group:not(:first-child) {
   margin-left: calc(var(--bs-border-width) * -1);
 }
-.btn-group > .btn:not(:last-child):not(.dropdown-toggle), .webform-actions .btn-group > input:not(:last-child):not(.dropdown-toggle), .btn-group > .button:not(:last-child):not(.dropdown-toggle), .menu.navbar-nav > li.btn-group:last-child > a:not(:last-child):not(.dropdown-toggle), .node__links .btn-group > a:not(:last-child):not(.dropdown-toggle),
+.btn-group > .btn:not(:last-child):not(.dropdown-toggle), .webform-actions .btn-group > input:not(:last-child):not(.dropdown-toggle), .btn-group > .button:not(:last-child):not(.dropdown-toggle), .node__links .btn-group > a:not(:last-child):not(.dropdown-toggle),
 .btn-group > .btn.dropdown-toggle-split:first-child,
 .webform-actions .btn-group > input.dropdown-toggle-split:first-child,
 .btn-group > .dropdown-toggle-split.button:first-child,
-.menu.navbar-nav > li.btn-group:last-child > a.dropdown-toggle-split:first-child,
 .node__links .btn-group > a.dropdown-toggle-split:first-child,
 .btn-group > .btn-group:not(:last-child) > .btn,
 .webform-actions .btn-group > .btn-group:not(:last-child) > input,
 .btn-group > .btn-group:not(:last-child) > .button,
-.menu.navbar-nav.btn-group > li.btn-group:last-child:not(:last-child) > a,
 .node__links .btn-group > .btn-group:not(:last-child) > a {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
-.btn-group > .btn:nth-child(n+3), .webform-actions .btn-group > input:nth-child(n+3), .btn-group > .button:nth-child(n+3), .menu.navbar-nav > li.btn-group:last-child > a:nth-child(n+3), .node__links .btn-group > a:nth-child(n+3),
+.btn-group > .btn:nth-child(n+3), .webform-actions .btn-group > input:nth-child(n+3), .btn-group > .button:nth-child(n+3), .node__links .btn-group > a:nth-child(n+3),
 .btn-group > :not(.btn-check) + .btn,
 .webform-actions .btn-group > :not(.btn-check) + input,
 .btn-group > :not(.btn-check) + .button,
-.menu.navbar-nav > li.btn-group:last-child > :not(.btn-check) + a,
 .node__links .btn-group > :not(.btn-check) + a,
 .btn-group > .btn-group:not(:first-child) > .btn,
 .webform-actions .btn-group > .btn-group:not(:first-child) > input,
 .btn-group > .btn-group:not(:first-child) > .button,
-.menu.navbar-nav.btn-group > li.btn-group:last-child:not(:first-child) > a,
 .node__links .btn-group > .btn-group:not(:first-child) > a {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
@@ -3904,12 +3886,12 @@ textarea.is-invalid.form-textarea {
   margin-right: 0;
 }
 
-.btn-sm + .dropdown-toggle-split, .node__links a + .dropdown-toggle-split, .btn-group-sm > .btn + .dropdown-toggle-split, .webform-actions .btn-group-sm > input + .dropdown-toggle-split, .btn-group-sm > .button + .dropdown-toggle-split, .menu.navbar-nav > li.btn-group-sm:last-child > a + .dropdown-toggle-split {
+.btn-sm + .dropdown-toggle-split, .node__links a + .dropdown-toggle-split, .btn-group-sm > .btn + .dropdown-toggle-split, .webform-actions .btn-group-sm > input + .dropdown-toggle-split, .btn-group-sm > .button + .dropdown-toggle-split {
   padding-right: 0.375rem;
   padding-left: 0.375rem;
 }
 
-.btn-lg + .dropdown-toggle-split, .webform-actions input + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split, .btn-group-lg > .button + .dropdown-toggle-split, .menu.navbar-nav > li.btn-group-lg:last-child > a + .dropdown-toggle-split, .node__links .btn-group-lg > a + .dropdown-toggle-split {
+.btn-lg + .dropdown-toggle-split, .webform-actions input + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split, .btn-group-lg > .button + .dropdown-toggle-split, .node__links .btn-group-lg > a + .dropdown-toggle-split {
   padding-right: 0.75rem;
   padding-left: 0.75rem;
 }
@@ -3919,28 +3901,26 @@ textarea.is-invalid.form-textarea {
   align-items: flex-start;
   justify-content: center;
 }
-.btn-group-vertical > .btn, .webform-actions .btn-group-vertical > input, .btn-group-vertical > .button, .menu.navbar-nav > li.btn-group-vertical:last-child > a, .node__links .btn-group-vertical > a,
+.btn-group-vertical > .btn, .webform-actions .btn-group-vertical > input, .btn-group-vertical > .button, .node__links .btn-group-vertical > a,
 .btn-group-vertical > .btn-group {
   width: 100%;
 }
-.btn-group-vertical > .btn:not(:first-child), .webform-actions .btn-group-vertical > input:not(:first-child), .btn-group-vertical > .button:not(:first-child), .menu.navbar-nav > li.btn-group-vertical:last-child > a:not(:first-child), .node__links .btn-group-vertical > a:not(:first-child),
+.btn-group-vertical > .btn:not(:first-child), .webform-actions .btn-group-vertical > input:not(:first-child), .btn-group-vertical > .button:not(:first-child), .node__links .btn-group-vertical > a:not(:first-child),
 .btn-group-vertical > .btn-group:not(:first-child) {
   margin-top: calc(var(--bs-border-width) * -1);
 }
-.btn-group-vertical > .btn:not(:last-child):not(.dropdown-toggle), .webform-actions .btn-group-vertical > input:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .button:not(:last-child):not(.dropdown-toggle), .menu.navbar-nav > li.btn-group-vertical:last-child > a:not(:last-child):not(.dropdown-toggle), .node__links .btn-group-vertical > a:not(:last-child):not(.dropdown-toggle),
+.btn-group-vertical > .btn:not(:last-child):not(.dropdown-toggle), .webform-actions .btn-group-vertical > input:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .button:not(:last-child):not(.dropdown-toggle), .node__links .btn-group-vertical > a:not(:last-child):not(.dropdown-toggle),
 .btn-group-vertical > .btn-group:not(:last-child) > .btn,
 .webform-actions .btn-group-vertical > .btn-group:not(:last-child) > input,
 .btn-group-vertical > .btn-group:not(:last-child) > .button,
-.menu.navbar-nav.btn-group-vertical > li.btn-group:last-child:not(:last-child) > a,
 .node__links .btn-group-vertical > .btn-group:not(:last-child) > a {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
-.btn-group-vertical > .btn ~ .btn, .webform-actions .btn-group-vertical > input ~ .btn, .webform-actions .btn-group-vertical > .btn ~ input, .webform-actions .btn-group-vertical > input ~ input, .btn-group-vertical > .button ~ .btn, .webform-actions .btn-group-vertical > .button ~ input, .btn-group-vertical > .btn ~ .button, .webform-actions .btn-group-vertical > input ~ .button, .btn-group-vertical > .button ~ .button, .menu.navbar-nav > li.btn-group-vertical:last-child > a ~ .btn, .webform-actions .menu.navbar-nav > li.btn-group-vertical:last-child > a ~ input, .menu.navbar-nav > li.btn-group-vertical:last-child > a ~ .button, .menu.navbar-nav > li.btn-group-vertical:last-child > .btn ~ a, .webform-actions .menu.navbar-nav > li.btn-group-vertical:last-child > input ~ a, .menu.navbar-nav > li.btn-group-vertical:last-child > .button ~ a, .menu.navbar-nav > li.btn-group-vertical:last-child > a ~ a, .node__links .btn-group-vertical > a ~ .btn, .node__links .webform-actions .btn-group-vertical > a ~ input, .webform-actions .node__links .btn-group-vertical > a ~ input, .node__links .btn-group-vertical > a ~ .button, .node__links .btn-group-vertical > .btn ~ a, .node__links .webform-actions .btn-group-vertical > input ~ a, .webform-actions .node__links .btn-group-vertical > input ~ a, .node__links .btn-group-vertical > .button ~ a, .node__links .btn-group-vertical > a ~ a,
+.btn-group-vertical > .btn ~ .btn, .webform-actions .btn-group-vertical > input ~ .btn, .webform-actions .btn-group-vertical > .btn ~ input, .webform-actions .btn-group-vertical > input ~ input, .btn-group-vertical > .button ~ .btn, .webform-actions .btn-group-vertical > .button ~ input, .btn-group-vertical > .btn ~ .button, .webform-actions .btn-group-vertical > input ~ .button, .btn-group-vertical > .button ~ .button, .node__links .btn-group-vertical > a ~ .btn, .node__links .webform-actions .btn-group-vertical > a ~ input, .webform-actions .node__links .btn-group-vertical > a ~ input, .node__links .btn-group-vertical > a ~ .button, .node__links .btn-group-vertical > .btn ~ a, .node__links .webform-actions .btn-group-vertical > input ~ a, .webform-actions .node__links .btn-group-vertical > input ~ a, .node__links .btn-group-vertical > .button ~ a, .node__links .btn-group-vertical > a ~ a,
 .btn-group-vertical > .btn-group:not(:first-child) > .btn,
 .webform-actions .btn-group-vertical > .btn-group:not(:first-child) > input,
 .btn-group-vertical > .btn-group:not(:first-child) > .button,
-.menu.navbar-nav.btn-group-vertical > li.btn-group:last-child:not(:first-child) > a,
 .node__links .btn-group-vertical > .btn-group:not(:first-child) > a {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
@@ -4983,7 +4963,7 @@ textarea.is-invalid.form-textarea {
   display: none;
 }
 
-.btn .badge, .webform-actions input .badge, .button .badge, .menu.navbar-nav > li:last-child > a .badge, .node__links a .badge {
+.btn .badge, .webform-actions input .badge, .button .badge, .node__links a .badge {
   position: relative;
   top: -1px;
 }
@@ -6955,7 +6935,7 @@ textarea.is-invalid.form-textarea {
   background-color: currentcolor;
   opacity: 0.5;
 }
-.placeholder.btn::before, .webform-actions input.placeholder::before, .placeholder.button::before, .menu.navbar-nav > li:last-child > a.placeholder::before, .node__links a.placeholder::before {
+.placeholder.btn::before, .webform-actions input.placeholder::before, .placeholder.button::before, .node__links a.placeholder::before {
   display: inline-block;
   content: "";
 }
@@ -12292,4 +12272,18 @@ form label {
 
 html, body {
   height: 100%;
+}
+
+@media (max-width: 767px) {
+  img {
+    width: 50%; /* Example: reducing the width */
+    height: auto;
+  }
+}
+.bg-dark-transparent {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.nav-link, ul.menu a.is-active {
+  color: #fff;
 }
