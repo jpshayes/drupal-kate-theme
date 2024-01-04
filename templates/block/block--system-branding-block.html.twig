@@ -18,7 +18,14 @@
 #}
 {% block content %}
   <div class="grid text-start text-md-center identity">
-    <div>
+    {% if site_logo %}
+      <div>
+        <a href="{{ path('<front>') }}" rel="home" class="site-logo">
+          <img class="img-fluid logo" src="{{ site_logo }}" alt="{{ 'Home'|t }}" />
+        </a>
+      </div>
+    {% endif %}
+        <div>
       {% if site_name %}
         <div class="site-name">
           <a href="{{ path('<front>') }}" rel="home">{{ site_name }}</a>
@@ -28,14 +35,6 @@
         <div class="site-slogan text-muted">{{ site_slogan }}</div>
       {% endif %}
     </div>
-    
-    {% if site_logo %}
-      <div>
-        <a href="{{ path('<front>') }}" rel="home" class="site-logo">
-          <img class="img-fluid logo" src="{{ site_logo }}" alt="{{ 'Home'|t }}" />
-        </a>
-      </div>
-    {% endif %}
   </div>
 {% endblock %}
 

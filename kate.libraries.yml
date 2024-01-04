@@ -107,6 +107,7 @@ global-styling:
   version: 1.x
   css:
     theme:
+      'https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined': { type: external, minified: true }
       css/style.css: {}
   js:
     js/bootstrap.bundle.min.js: {}
