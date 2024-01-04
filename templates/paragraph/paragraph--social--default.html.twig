@@ -49,25 +49,38 @@
 {% block paragraph %}
   <div{{ attributes.addClass(classes) }}>
     {% block content %}
-<div class="container">
-  <div class="row">
-    <!-- Left Column for Image and Links -->
-    <div class="col-md-6">
-      {% if content.field_image is not empty %}
-        <img src="{{ content.field_image }}" alt="Description" class="img-fluid">
-      {% endif %}
-      {{ content.field_link }}
-    </div>
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Left Column for Image -->
+          <div class="col-lg-5">
+            {% if content.field_image is not empty %}
+              <img src="{{ content.field_image }}" alt="Description" class="img-fluid">
+            {% endif %}
+          </div>
 
-    <!-- Right Column for Content -->
-    <div class="col-md-6">
-      {{ content.field_content }}
-    </div>
-  </div>
-</div>
-
-
-{{ content|without('field_content', 'field_image', 'field_link') }}
+          <!-- Right Column for Content -->
+          <div class="col-lg-7 text-white">
+            {{ content.field_content }}
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-5">
+            <div class="text-center mt-5">
+              {% for item in content.field_link %}
+                {% if item['#url'] is defined and item['#url'].toString() is not empty %}
+                  <a href="{{ item['#url'].toString() }}" class="text-white mx-2">
+                    <span class="material-symbols-outlined">{{ item['#title'] }}</span>
+                  </a>
+                {% endif %}
+              {% endfor %}
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <!-- Optional content for the second column -->
+          </div>
+        </div>
+      </div>
+      {{ content|without('field_content', 'field_image', 'field_link') }}
     {% endblock %}
   </div>
 {% endblock paragraph %}

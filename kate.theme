@@ -20,6 +20,7 @@ function kate_preprocess_image_widget(array &$variables) {
   }
 }
 
+
 /**
  * Implements hook_preprocess_breadcrumb().
  */

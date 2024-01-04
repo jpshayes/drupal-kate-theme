@@ -8685,7 +8685,7 @@ textarea.is-invalid.form-textarea {
   color: rgba(var(--bs-black-rgb), var(--bs-text-opacity)) !important;
 }
 
-.text-white {
+.text-white, .field--name-field-content > * {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
 }
@@ -12262,4 +12262,34 @@ h1.page-title, .page-title.h1 {
 
 form label {
   display: block;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 1, "wght" 300, "GRAD" 200, "opsz" 24;
+}
+
+.material-symbols-outlined {
+  font-size: 40px;
+  transition: transform 0.3s ease; /* Transition on transform */
+  transform: scale(1); /* Default scale */
+}
+
+.material-symbols-outlined:hover {
+  transform: scale(1.2); /* Scale up on hover */
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+html, body {
+  height: 100%;
 }

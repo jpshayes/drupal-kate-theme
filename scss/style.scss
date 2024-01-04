@@ -276,3 +276,38 @@ form label {
   @extend .btn-lg;
   @extend .btn-secondary;
 }
+
+.field--name-field-content>* {
+  @extend .text-white;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 300,
+  'GRAD' 200,
+  'opsz' 24;
+}
+
+.material-symbols-outlined {
+  font-size: 40px;
+  transition: transform 0.3s ease; /* Transition on transform */
+  transform: scale(1); /* Default scale */
+}
+
+.material-symbols-outlined:hover {
+  transform: scale(1.2); /* Scale up on hover */
+}
+
+.d-flex {
+  display: flex;
+}
+.justify-content-center {
+  justify-content: center;
+}
+.align-items-center {
+  align-items: center;
+}
+html, body {
+  height: 100%;
+}
