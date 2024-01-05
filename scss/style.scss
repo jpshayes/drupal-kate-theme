@@ -13,7 +13,7 @@ sans-serif;
 $primary: #182D09;
 $light: #7A9666;
 $dark: #121e34;
-$secondary: #5C6358;
+$secondary: #3D5131;
 $success: #28a745;
 $info: #17a2b8;
 $warning: #ffc107;
@@ -21,6 +21,7 @@ $danger: #dc3545;
 $black: #000;
 $white: #fff;
 $transparent: transparent;
+$grey-green: #213416;
 
 $theme-colors: ("primary": $primary,
   "secondary": $secondary,
@@ -31,6 +32,7 @@ $theme-colors: ("primary": $primary,
   "light": $light,
   "dark": $dark,
   "transparent": $transparent,
+  "grey-green": $grey-green,
 );
 
 $btn-primary-color: $white;
