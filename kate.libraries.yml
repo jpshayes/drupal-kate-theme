@@ -111,3 +111,4 @@ global-styling:
       css/style.css: {}
   js:
     js/bootstrap.bundle.min.js: {}
+    js/script.js: {} 

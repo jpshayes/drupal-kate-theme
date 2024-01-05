@@ -29,7 +29,7 @@
   {% import _self as menus %}
   {% if items %}
     {% if menu_level == 0 %}
-      <ul{{ attributes.addClass('menu', 'navbar-nav', 'ms-auto', 'mb-2', 'mb-lg-0') }}>
+      <ul{{ attributes.addClass('menu', 'navbar-nav', 'mb-2', 'mb-lg-0') }}>
     {% else %}
       <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end">
     {% endif %}
@@ -41,7 +41,7 @@
       ] %}
       <li{{ item.attributes.addClass(classes) }}>
         {% if item.below %}
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle fs-5" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             {{ item.title }}
           </a>
           {{ menus.menu_links(item.below, attributes, menu_level + 1) }}
@@ -49,7 +49,7 @@
           {% if menu_level > 0 %}
             {{ link(item.title, item.url, {'class': 'dropdown-item'}) }}
           {% else %}
-            {{ link(item.title, item.url, {'class': 'nav-link'}) }}
+            {{ link(item.title, item.url, {'class': 'nav-link fs-5'}) }}
           {% endif %}
         {% endif %}
       </li>

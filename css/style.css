@@ -12281,7 +12281,7 @@ html, body {
   }
 }
 .bg-dark-transparent {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .nav-link, ul.menu a.is-active {
