@@ -57,30 +57,37 @@
               <img src="{{ content.field_image }}" alt="A somewhat grainy black and white photograph featuring the face of Kate Hayes, characterized by her curly hair. The background of the image is the sky, adding a natural and open backdrop to the portrait" class="img-fluid">
             {% endif %}
           <h1 class="mt-0 text-white display-6 d-block d-lg-none">Kate Hayes</h1>
+          <div class="text-center mt-0 d-none d-lg-block">
+          <h1 class="mt-0 text-white display-6 d-none d-lg-block">Kate Hayes</h1>
+            {% for item in content.field_link %}
+              {% if item['#url'] is defined and item['#url'].toString() is not empty %}
+                <a href="{{ item['#url'].toString() }}" class="text-white mx-2">
+                <span class="material-symbols-outlined">{{ item['#title'] }}</span>
+                </a>
+              {% endif %}
+            {% endfor %}
+          </div>
           </div>
 
           <!-- Right Column for Content -->
           <div class="col-12 col-lg-8 col-xl-9 text-white">
-          <div class="px-5">
+          <div class="px-0 px-lg-5">
             {{ content.field_content }}
           </div>
           </div>
         </div>
         <div class="row align-items-start">
-          <div class="col-12 col-lg-4 col-xl-3">
+          <div class="col-12 d-block d-lg-none">
             <div class="text-center mt-0">
             <h1 class="mt-0 text-white display-6 d-none d-lg-block">Kate Hayes</h1>
-              {% for item in content.field_link %}
-                {% if item['#url'] is defined and item['#url'].toString() is not empty %}
-                  <a href="{{ item['#url'].toString() }}" class="text-white mx-2">
-                    <span class="material-symbols-outlined">{{ item['#title'] }}</span>
-                  </a>
-                {% endif %}
-              {% endfor %}
+            {% for item in content.field_link %}
+              {% if item['#url'] is defined and item['#url'].toString() is not empty %}
+                <a href="{{ item['#url'].toString() }}" class="text-white mx-2">
+                <span class="material-symbols-outlined">{{ item['#title'] }}</span>
+                </a>
+              {% endif %}
+            {% endfor %}
             </div>
-          </div>
-          <div class="col-lg-8 col-xl-3">
-            <!-- Optional content for the second column -->
           </div>
         </div>
       </div>
